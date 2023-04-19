@@ -1,0 +1,631 @@
+@font-face {
+    font-family: "NunitoSans Italic";
+    src: url(./fonts/NunitoSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "NunitoSans Regular";
+    src: url(./fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "YesevaOne Regular";
+    src: url(./fonts/YesevaOne-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "NunitoSans Regular", Helvetica, Arial, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #E3B873;
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "NunitoSans Italic";
+    font-size: 11px;
+    line-height: 15px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 100%;
+}
+
+.header {
+    background-color: #131313;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+.logo {
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-navigation__item a:hover {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.hero {
+    background-image: url(/images/hero.jpg);
+    background-size: cover;
+    height: 707px;
+    position: relative;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    padding: 194px 0px 0px 33px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.title {
+    font-family: "YesevaOne Regular", 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    width: 550px;
+    height: 105px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 19px;
+    color:white;
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0;
+    width: 504px;
+    height: 89px;
+}
+
+.button-header {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+
+.button-main {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    padding: 19px 42px 20.65px 41px;
+    margin-right: 20px;
+    margin-top: 41px;
+}
+
+.button-main2 {
+    background-color: transparent;
+    border-radius: 2px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    padding: 19.09px 23px 20.57px 22px;
+    margin-top: 41px;
+}
+
+.button-main3 {
+    display: none;
+}
+
+.main-button {  
+    margin-top: 41px;
+    width: 434px;
+}
+
+.tel {
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+span {
+    color: #E3B873
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .tel {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        margin-right: 18px;
+    }
+
+    .button-header {
+        display: none;
+    }
+
+    .header-navigation {
+        display: none;
+    }
+   
+    .logo {
+        margin-left: 18px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header-navigation {
+        display: none;
+    }
+
+    .header-content {
+        height: 57px;
+    }
+
+    .hero-container {
+        padding: 85px 18px 0px 18px;
+    }
+
+    .hero {
+        height: 476px;
+    }
+
+    .title {
+        font-size: 23px;
+        line-height: 1.33;
+        width: 100%;
+        height: 60px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 1.36;
+        padding-top: 16px;
+        width: 100%;
+        
+    }
+
+    .main-button {  
+        margin-top: 41px;
+        width: 100%;
+    }
+
+    .button-main {
+        display: block;
+        padding: 19px 69px 19px 70px;
+        margin-top: 32px;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .button-main2 {
+        display: none;
+    }
+
+    .button-main3 {
+        display: block;
+        background-color: transparent;
+        border-radius: 0;
+        border-color: #FFFFFF;
+        border-style: solid;
+        border-width: 1px;
+        padding: 19px 84px 19px 86px;
+        margin-top: 26px;
+        width: 100%;
+    }
+
+}
+
+
+/* Step2 Completed projects */
+
+
+.project {
+    background-color: #131313;
+    height: 1074px;
+    color: #FFFFFF;
+}
+
+.project-container {
+    padding: 107px 33px 0px 33px;
+}
+
+.project-link ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.nav-item__link {
+    margin-right: 60.5px;
+    cursor: pointer;
+}
+
+.nav-item__link {
+    font-family: "YesevaOne Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-item__link.active {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+    padding-bottom: 7px;
+}
+
+.project-photo {
+    padding-top: 53px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.completed-projects {
+    order: -1;
+}
+
+.project-title {
+    font-family: "YesevaOne Regular";
+    font-style: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    margin: 0;
+    width: 200px;
+}
+
+.project-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 34px 50px 42px 0px;
+}
+
+.project-city-title {
+    font-family: "YesevaOne Regular";
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.project-info-text {
+    font-family: "NunitoSans Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 65px 65px;
+}
+
+/* Arrows */
+
+.left-arrow, 
+.right-arrow {
+  display: inline-flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.left-arrow::before,
+.right-arrow::before,
+.left-arrow::after,
+.right-arrow::after {
+  display: inline-flex;
+  position: absolute;
+  content: '';
+}
+
+
+.left-arrow::before,
+.right-arrow::before {
+  top: 10px;
+  left: -1px;
+  width: 40.51px;
+  height: 1.34px;
+  background-color: #FFFFFF;
+}
+
+.left-arrow::after,
+.right-arrow::after {
+  width: 10px;
+  height: 10px;
+  top: 5px;
+}
+
+.left-arrow::after {
+  left: 0;
+  border-top: 1.34px solid #FFFFFF;
+  border-left: 1.34px solid #FFFFFF;
+  transform: rotate(-45deg);
+}
+
+.right-arrow::after {
+  right: -19px;
+  border-top: 1.34px solid #FFFFFF;
+  border-right: 1.34px solid #FFFFFF;
+  transform: rotate(45deg);
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    border-radius: 30px;
+    margin-right: 17.5px;
+}
+
+.circle-left {
+    margin-left: 30.5px;
+    background-color: #FFFFFF;
+}
+
+.circle-right {   
+    margin-right: 11px;
+}
+
+.project-symbols {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.mobile-left-arrow,
+.mobile-right-arrow {
+    display: none;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .rostov {
+        max-width: 46%;
+        height: 488px;
+        object-fit: cover;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .project-text {
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: 17px;
+        padding-top: 22px;
+        padding-bottom: 36px;
+        text-align: center;
+        height: 109px;
+    }
+
+    .project-link__item {
+        display: none;
+    }
+
+    .project-photo {
+        padding-top: 0px;
+        display: block;
+    }
+
+    .project-symbols {
+        display: none;
+    }
+
+    .rostov {
+        display: none;
+    }
+
+    .project-title {
+        margin: 0 auto;
+        line-height: 30px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .project-container {
+        padding: 36px 17px 0px 18px;
+        margin: 0 auto;
+    }
+
+    .project-city-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .project-info-text {
+        font-size: 11px;
+        line-height: 15px;
+        width: 93px;
+        margin-top: 13px;
+    }
+
+    .project-info {
+        grid-template-rows: 65px 76px;
+        grid-template-columns: 169px 147px;
+        margin-top: 276px;
+        justify-content: center;
+    }
+
+    .project-mobile-image { 
+        position: relative;   
+    }
+
+    .mobile-image {
+        position: absolute;
+        width: 100%;  
+    }
+
+    .project-time,
+    .project-cost {
+        margin-top: 27px;
+    }
+
+    /* Mobile circle-arrows*/
+
+    .mobile-left-arrow, 
+    .mobile-right-arrow {
+        display: inline-flex;
+        position: relative;
+        width: 36px;
+        height: 36px;
+        background-color: #E3B873;
+        border-radius: 50%;
+    }
+
+    .mobile-left-arrow::before, 
+    .mobile-right-arrow::before {
+        position: absolute;
+        display: inline-flex;
+        width: 6px;
+        height: 6px;
+        content: '';
+    }
+
+    .mobile-left-arrow::before {
+        top: 15px;
+        left: 14px;
+        border-top: 0.75px solid #FFFFFF;
+        border-left: 0.75px solid #FFFFFF;
+        transform: rotate(-45deg);
+    }
+
+    .mobile-right-arrow::before {
+        top: 15px;
+        left: 14px;
+        border-top: 0.75px solid #FFFFFF;
+        border-right: 0.75px solid #FFFFFF;
+        transform: rotate(45deg);
+    }
+
+    /* Mobile circle-arrows end*/
+
+    .mobile-image {
+        display: block;
+    }
+    
+    .mobile-left-arrow,
+    .mobile-right-arrow {
+        display: inline-flex;
+    }
+
+    .mobile-left-arrow {
+        position: absolute;
+        transform: translateY(285%);
+        margin-left: 14px;
+    }
+
+    .mobile-right-arrow {
+        position: absolute;
+        transform: translateY(285%);
+        margin-right: 13px;
+        right: 0;
+    }
+
+}    
+
+.slider-content__img {
+	width: auto; 
+    height: auto;
+}
+
+.slider__images .slider-content__img {
+	display: none;
+	opacity: 0;
+	transition: opacity 800ms ease;
+}
+  
+.slider__images .slider-content__img.active {
+	opacity: 1;
+	display: block;
+}
+
+.slider__dots {
+	display: flex;
+    margin-left: 30.5px;
+    margin-right: -6px;
+}
+
+.slider__dots-item {
+	width: 9.57px;
+	height: 9.57px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-right: 17.54px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.slider__dots-item.active {
+	background-color: #FFFFFF;
+
+}
